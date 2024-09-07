@@ -160,6 +160,17 @@ void sumOfNumbers()
     printf("The sum of all numbers from 1 to 100 is %d\n",sumOfNumbers);
 } 
 // main method assigining my info to dif variables
+
+// calling method and printing info
+void myInfo(char myName[], char myMajor[], int totalCredits, int currentCredits, char className[])
+{
+    printf("Hi my name is %s\n", myName);
+    printf("My major is %s\n", myMajor);
+    printf("I have completed %d credits\n", totalCredits);
+    printf("Currently taking %d credits\n", currentCredits);
+    printf("This class' name is %s\n", className);
+}
+
 int main(void) 
 {
     numericalComputations();
@@ -173,14 +184,5 @@ int main(void)
     forLoopNumericalComputations();
     whileLoopNumericalComputations();
     return 0;
-}
-// calling method and printing info
-void myInfo(char myName[], char myMajor[], int totalCredits, int currentCredits, char className[])
-{
-    printf("Hi my name is %s\n", myName);
-    printf("My major is %s\n", myMajor);
-    printf("I have completed %d credits\n", totalCredits);
-    printf("Currently taking %d credits\n", currentCredits);
-    printf("This class' name is %s\n", className);
 }
 
