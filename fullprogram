@@ -4,6 +4,7 @@
 void numericalComputations() 
 {
     int maxiumNumber = 100;
+    // print when 100 is divided by a number
     printf("%d\n", maxiumNumber % 1);
     printf("%d\n", maxiumNumber % 2);
     printf("%d\n", maxiumNumber % 3);
@@ -14,7 +15,7 @@ void numericalComputations()
     printf("%d\n", maxiumNumber % 8);
     printf("%d\n", maxiumNumber % 9);
     printf("%d\n", maxiumNumber % 10);
-
+    //print when a 100 is subtracted from a num
     printf("%d\t", maxiumNumber - 1);
     printf("%d\t", maxiumNumber - 2);
     printf("%d\t", maxiumNumber - 3);
@@ -27,7 +28,7 @@ void numericalComputations()
     printf("%d\t", maxiumNumber - 10);
 
     printf("\n");
-
+    // print the number when a number is added to 100
     printf("%d\n", maxiumNumber + 1);
     printf("%d\n", maxiumNumber + 2);
     printf("%d\n", maxiumNumber + 3);
@@ -38,7 +39,7 @@ void numericalComputations()
     printf("%d\n", maxiumNumber + 8);
     printf("%d\n", maxiumNumber + 9);
     printf("%d\n", maxiumNumber + 10);
-
+    // print the sum of 100 times a num
     printf("%d\t", maxiumNumber * 1);
     printf("%d\t", maxiumNumber * 2);
     printf("%d\t", maxiumNumber * 3);
@@ -51,7 +52,7 @@ void numericalComputations()
     printf("%d\t", maxiumNumber * 10);
 
     printf("\n");
-
+    // print div of 100 from a num
     printf("%d\n", maxiumNumber / 1);
     printf("%d\n", maxiumNumber / 2);
     printf("%d\n", maxiumNumber / 3);
@@ -62,13 +63,15 @@ void numericalComputations()
     printf("%d\n", maxiumNumber / 8);
     printf("%d\n", maxiumNumber / 9);
     printf("%d\n", maxiumNumber / 10);
-} // end of numericalComputations
+} 
 
-
-void SecondVerNumericalComputations()
+// for loop when max num is 100
+void forLoopNumericalComputations()
 {
     int maxiumNumber = 100;
-    printf("This is the for-loop version\n");
+    // print that its a for loop
+    printf("im now demonstrating the for loop\n");
+    // if int = 1 and less than 11 increment number 
     for(int i = 1; i < 11; i++)
     {
         printf("%d\n", maxiumNumber % i);
@@ -97,14 +100,14 @@ void SecondVerNumericalComputations()
     {
         printf("%d\n", maxiumNumber / i);
     }
-} // end of SecondVerNumericalComputations
-
-void thirdVerNumericalComputations()
+} 
+// while loop method
+void whileLoopNumericalComputations()
 {
     int maxiumNumber = 100;
     int i = 1;
-    printf("This is the while version\n");
-
+    printf("this is for the while version\n");
+    // while the number is less than 11 
     while (i < 11)
     {
         printf("%d\n", maxiumNumber % i);
@@ -142,32 +145,21 @@ void thirdVerNumericalComputations()
         printf("%d\n", maxiumNumber / i);
         i++;
     }
-} // end of thirdVerNumericalComputations
+} 
 
-
+// sum of numbers method
 void sumOfNumbers()
 {
     int sumOfNumbers = 0;
-
+    // for int and that number is less than 101, so 100 and less, increment that number
     for(int n = 1; n < 101; n++)
     {
-        sumOfNumbers = (n+1) * (n/2);
+        sumOfNumbers += n;
     }
 
     printf("The sum of all numbers from 1 to 100 is %d\n",sumOfNumbers);
-} // end of sumOfNumbers
-
-
-void myInfo(char myName[], char myMajor[], int totalCredits, int currentCredits, char className[])
-{
-    printf("Hi my name is %s\n", myName);
-    printf("My major is %s\n", myMajor);
-    printf("I have completed %d credits\n", totalCredits);
-    printf("Currently taking %d credits\n", currentCredits);
-    printf("This class' name is %s\n", className);
-} // end of myInfo
-
-
+} 
+// main method assigining my info to dif variables
 int main(void) 
 {
     numericalComputations();
@@ -178,7 +170,17 @@ int main(void)
     int totalCredits = 72;
     int currentCredits = 12;
     myInfo(myName, myMajor, totalCredits, currentCredits, className);
-    SecondVerNumericalComputations();
-    thirdVerNumericalComputations();
+    forLoopNumericalComputations();
+    whileLoopNumericalComputations();
     return 0;
-} // end of main
+}
+// calling method and printing info
+void myInfo(char myName[], char myMajor[], int totalCredits, int currentCredits, char className[])
+{
+    printf("Hi my name is %s\n", myName);
+    printf("My major is %s\n", myMajor);
+    printf("I have completed %d credits\n", totalCredits);
+    printf("Currently taking %d credits\n", currentCredits);
+    printf("This class' name is %s\n", className);
+}
+
