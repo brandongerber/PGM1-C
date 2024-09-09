@@ -154,7 +154,7 @@ void sumOfNumbers()
     // for int and that number is less than 101, so 100 and less, increment that number
     for(int n = 1; n < 101; n++)
     {
-        sumOfNumbers += n;
+       sumOfNumbers = (n+1) * (n/2);
     }
 
     printf("The sum of all numbers from 1 to 100 is %d\n",sumOfNumbers);
