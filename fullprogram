@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-
+// void bc it is not returning a value
 void numericalComputations() 
 {
-    int maxiumNumber = 100;
-    // print when 100 is divided by a number
+    int maxiumNumber = 10;
+    // print when 10 is divided by a number
     printf("%d\n", maxiumNumber % 1);
     printf("%d\n", maxiumNumber % 2);
     printf("%d\n", maxiumNumber % 3);
@@ -15,7 +15,8 @@ void numericalComputations()
     printf("%d\n", maxiumNumber % 8);
     printf("%d\n", maxiumNumber % 9);
     printf("%d\n", maxiumNumber % 10);
-    //print when a 100 is subtracted from a num
+    //print when a num is subtracted from 10
+    // \t instead of \n for horizontal line
     printf("%d\t", maxiumNumber - 1);
     printf("%d\t", maxiumNumber - 2);
     printf("%d\t", maxiumNumber - 3);
@@ -28,7 +29,7 @@ void numericalComputations()
     printf("%d\t", maxiumNumber - 10);
 
     printf("\n");
-    // print the number when a number is added to 100
+    // print the number when a number is added to 10
     printf("%d\n", maxiumNumber + 1);
     printf("%d\n", maxiumNumber + 2);
     printf("%d\n", maxiumNumber + 3);
@@ -39,7 +40,7 @@ void numericalComputations()
     printf("%d\n", maxiumNumber + 8);
     printf("%d\n", maxiumNumber + 9);
     printf("%d\n", maxiumNumber + 10);
-    // print the sum of 100 times a num
+    // print the sum of 10 times a num
     printf("%d\t", maxiumNumber * 1);
     printf("%d\t", maxiumNumber * 2);
     printf("%d\t", maxiumNumber * 3);
@@ -52,7 +53,7 @@ void numericalComputations()
     printf("%d\t", maxiumNumber * 10);
 
     printf("\n");
-    // print div of 100 from a num
+    // print div of 10 from a num
     printf("%d\n", maxiumNumber / 1);
     printf("%d\n", maxiumNumber / 2);
     printf("%d\n", maxiumNumber / 3);
@@ -65,10 +66,10 @@ void numericalComputations()
     printf("%d\n", maxiumNumber / 10);
 } 
 
-// for loop when max num is 100
+// for loop when max num is 10
 void forLoopNumericalComputations()
 {
-    int maxiumNumber = 100;
+    int maxiumNumber = 10;
     // print that its a for loop
     printf("im now demonstrating the for loop\n");
     // if int = 1 and less than 11 increment number 
