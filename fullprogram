@@ -156,13 +156,20 @@ void whileLoopNumericalComputations()
 // sum of numbers method
 void sumOfNumbers()
 {
-    int sumOfNumbers = 0;
-    // for int and that number is less than 101, so 100 and less, increment that number
-    for(int n = 1; n < 101; n++) sumOfNumbers = (n+1) * (n/2);
-
+    int n = 100;
+    int sumOfNumbers = (n+1) * (n/2);
     printf("The sum of all numbers from 1 to 100 is %d\n",sumOfNumbers);
 } 
-// main method assigining my info to dif variables
+//sum of numbers for loop
+void forloopSumOfNumbers()
+{
+    int sumOfAllNumbers = 0;
+    for(int n = 1; n <= 101; n++) 
+    { 
+    sumOfAllNumbers += n;
+    }
+    printf("The sum of all numbers from 1 to 100 using a for loop is %d\n",sumOfAllNumbers);
+} 
 
 // calling method and printing info
 void myInfo(char myName[], char myMajor[], int totalCredits, int currentCredits, char className[])
@@ -186,6 +193,7 @@ int main(void)
     myInfo(myName, myMajor, totalCredits, currentCredits, className);
     forLoopNumericalComputations();
     whileLoopNumericalComputations();
+    forloopSumOfNumbers();
     return 0;
 }
 
