@@ -1,3 +1,18 @@
+/*********************************************************************
+ Author    : Brandon Gerber
+ Course    : COP 2270 Sec ANSI C Online
+ Professor : Michael Robinson
+ Program # : In this program I show my ability to use printf statements, 
+             do simple math, demonstrate for loops and while loops, 
+             and call all of these methods in the main function.
+ Due Date  : 09/14/2024
+
+ Certification:
+ I hereby certify that this work is my own and none of it is the work of any other person.
+
+ ..........{ Brandon Gerber }..........
+*********************************************************************/
+
 #include <stdio.h>
 
 // void bc it is not returning a value
@@ -76,8 +91,8 @@ void forLoopNumericalComputations()
 {
     int maxiumNumber = 10;
     // print that its a for loop
-    printf("im now demonstrating the for loop\n");
-    // if int = 1 and less than 11 increment number 
+    printf("this is for the for loop\n");
+    // if int = 1 and less than 11 increment  
     for(int i = 1; i < 11; i++)
     {
         printf("%d\n", maxiumNumber % i);
