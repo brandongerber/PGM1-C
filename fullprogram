@@ -122,6 +122,7 @@ void forLoopNumericalComputations()
         printf("%d\n", maxiumNumber / i);
     }
 } 
+
 // while loop method
 void whileLoopNumericalComputations()
 {
@@ -175,6 +176,7 @@ void sumOfNumbers()
     int sumOfNumbers = (n+1) * (n/2);
     printf("The sum of all numbers from 1 to 100 is %d\n",sumOfNumbers);
 } 
+
 //sum of numbers for loop
 void forloopSumOfNumbers()
 {
@@ -196,6 +198,7 @@ void myInfo(char myName[], char myMajor[], int totalCredits, int currentCredits,
     printf("The name of this class is %s\n", className);
 }
 
+// assigning values
 int main(void) 
 {
     numericalComputations();
